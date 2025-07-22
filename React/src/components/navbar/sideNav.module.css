@@ -1,0 +1,133 @@
+.sideNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: calc(100vh - 75px);
+  background: linear-gradient(145deg, #f0f4f8, #d9e2ec);
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 8px 0 0 8px;
+  z-index: 1100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  transition: right 0.3s ease;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.7rem 1rem;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #2563eb;
+  box-shadow: 0 0 10px #3b82f6;
+  transform: translateX(-4px);
+}
+
+button::before {
+  content: "⚙️";
+  font-size: 1.1rem;
+}
+
+.adminButton::before {
+  content: "👑";
+}
+button:nth-child(2)::before {
+  content: "📋";
+}
+button:nth-child(3)::before {
+  content: "🤝";
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.selector select {
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* כפתור toggle */
+.toggleButton {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  z-index: 1200;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* רקע כהה מאחורי תפריט נפתח */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+  .toggleButton {
+    display: block;
+  }
+
+  .sideNav {
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 220px;
+    background: linear-gradient(145deg, #f0f4f8, #d9e2ec);
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 1rem;
+    transition: right 0.3s ease;
+    z-index: 1101;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .sideNav.open {
+    right: 0;
+  }
+
+  button {
+    justify-content: flex-start;
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  button::before {
+    display: none; /* אפשר גם להשאיר אם תרצי */
+  }
+}
