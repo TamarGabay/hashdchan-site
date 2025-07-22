@@ -40,11 +40,8 @@
 
 ### 🖥️ צד שרת (C# ASP.NET Core)
 - פתחו את פתרון ה־C# (.sln) ב־Visual Studio או VS Code.
-
 - ודאו שקובץ appsettings.json מוגדר כראוי (חיבור למסד הנתונים, כתובת CORS וכו').
-
-- הריצו את הפרויקט על ידי לחיצה על ▶️ (Start Debugging) או על ידי הפקודה:
-dotnet run
+- הריצו את הפרויקט על ידי לחיצה על ▶️ (Start Debugging) או על ידי הפקודה:  dotnet run
 - ה־Swagger ייפתח אוטומטית (בכתובת http://localhost:5245/swagger) – מכאן תוכלו לבדוק את ה־API.
 
 ### 🌐 צד לקוח (React)
