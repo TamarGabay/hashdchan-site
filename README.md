@@ -37,15 +37,27 @@
 - Chrome/Edge מותקן  
 - חיבור לאינטרנט (לבדיקת דואר/תמונות)
 
-### 📦 התקנת צד שרת (API)
-1. פתח את הסOLUTION `BSDFlow.sln` ב־Visual Studio.  
-2. הגדר את פרויקט `BSDFlow.API` כברירת מחדל.  
-3. הרץ `Update-Database` ממסוף Package Manager.  
-4. לחץ על `IIS Express` להפעלת השרת.  
-5. גש ל־`https://localhost:port/swagger` לבדוק שה-API פעיל.
+### 🖥️ צד שרת (C# ASP.NET Core)
+- פתחו את פתרון ה־C# (.sln) ב־Visual Studio או VS Code.
 
-### 💻 התקנת צד לקוח (React)
-```bash
-cd BSDFlow.Client
+- ודאו שקובץ appsettings.json מוגדר כראוי (חיבור למסד הנתונים, כתובת CORS וכו').
+
+- הריצו את הפרויקט על ידי לחיצה על ▶️ (Start Debugging) או על ידי הפקודה:
+bash
+dotnet run
+- ה־Swagger ייפתח אוטומטית (לרוב בכתובת https://localhost:5001/swagger או http://localhost:5000/swagger) – מכאן תוכלו לבדוק את ה־API.
+
+### 🌐 צד לקוח (React)
+- עברו לתיקיית צד הלקוח (לרוב client או frontend)
+- התקינו את התלויות:
+bash
 npm install
-npm run dev
+- הריצו את האפליקציה:
+bash
+npm start
+- האפליקציה תעלה אוטומטית בכתובת:
+
+arduino
+http://localhost:3000
+⚙️ הגדרות CORS (בצד שרת)
+ודאו שכתובת ה־Frontend (http://localhost:3000) מוגדרת כ־Allowed Origin בקובץ ההגדרות או בקונפיגורציית ה־CORS בקוד.
