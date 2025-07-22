@@ -7,7 +7,7 @@
 
 ## 🚀 תכונות עיקריות
 
-- יצירת משתמשים לפי סוג (Admin, Parent, Matchmaker, Candidate)
+- יצירת משתמשים לפי סוג (Admin, Parent, Matchmaker,)
 - ממשקי ניהול מתקדמים לשדכנים והורים
 - מילוי טפסים דינמיים למועמדים עם Enum-ים בעברית
 - מערכת אימות והרשאות מבוססת JWT
@@ -17,34 +17,14 @@
 
 ---
 
-## 🛠️ טכנולוגיות
-
-**Frontend:** React, Redux, TypeScript, CSS Modules  
-**Backend:** ASP.NET Core C#, Entity Framework, JWT, REST API  
-**DB:** SQL Server / SQLite  
-**שירותים נוספים:** Nodemailer / SMTP לשליחת מיילים
-
----
-
-# BSDFlow – BeSiyata DeShmaya  
-**Education and Career Flow Management System**
-
-מערכת ניהול תהליכי למידה, בוטקמפים, ראיונות, השמות והעסקה – כחלק מפרויקט הגמר שלי בתום שנתיים לימודי תכנות.
-
----
-
-## 🎯 מטרת המערכת  
-BSDFlow נבנתה במטרה לנהל את כל זרימת התלמידים בארגון – משלב הקורסים והבוטקמפים, דרך ראיונות והשמות, ועד קליטה לעבודה.  
-המערכת מספקת כלים לניהול ישויות כמו תלמידים, מרצים, אנשי צוות, ארגונים ומשרות, תוך מתן מעקב אחר תהליכים אישיים וקבוצתיים.
-
----
-
 ## 🛠 טכנולוגיות בשימוש  
-- **Backend:** ASP.NET Core 8, C#, Entity Framework Core  
-- **Frontend:** React + TypeScript  
+- **Backend:** ASP.NET Core C#, Entity Framework, JWT, REST API   
+- **Frontend:** React, Redux, TypeScript, CSS Modules  
 - **Database:** SQL Server  
 - **CI/CD:** GitHub + Git  
-- **Dev Tools:** Swagger, Postman, Visual Studio 2022
+- **Dev Tools:** Swagger, Visual Studio 2022
+
+  **שירותים נוספים:** SMTP לשליחת מיילים
 
 ---
 
