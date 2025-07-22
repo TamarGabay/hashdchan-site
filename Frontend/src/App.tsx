@@ -11,27 +11,8 @@ useEffect(() => {
   dispatch(loadUserFromToken());
 }, [dispatch]);
 
-
-
-
     return <>
       <Router /> 
-       {/* זה עוטף את כל הניווט */}
-      {/* <MatchPage /> */}
-    </>
-    // <Provider store={store}>
-      {/* user ? <HomePage /> : <LoginPage />; */}
-      {/* <BrowserRouter>
-      
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-      </Routes>
-    </BrowserRouter> */}
-    {/* <CandidateManagementPage/> */}
-    {/* </Provider> */}
-    
-
 }
 
 export default App;
