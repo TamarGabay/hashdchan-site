@@ -59,5 +59,6 @@ npm start
 
 arduino
 http://localhost:3000
+
 ⚙️ הגדרות CORS (בצד שרת)
 ודאו שכתובת ה־Frontend (http://localhost:3000) מוגדרת כ־Allowed Origin בקובץ ההגדרות או בקונפיגורציית ה־CORS בקוד.
